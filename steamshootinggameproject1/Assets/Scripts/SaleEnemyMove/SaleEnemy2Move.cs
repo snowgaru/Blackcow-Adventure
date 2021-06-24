@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaleEnemy2Move : SaleEnemy1Move
+public class SaleEnemy2Move : MonoBehaviour
 {
     [SerializeField]
     protected float speed = 3f;

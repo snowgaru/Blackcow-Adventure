@@ -148,3 +148,4 @@ MonoBehaviour:
   hp: 7
   point: 7000
   Sound: {fileID: 1256278247447842955, guid: bcf3e62e371cbc148b4687e0c7a1275a, type: 3}
+  Bullet: {fileID: 1438531062368873843, guid: eb4420f5350decd4d823e4f34bf58059, type: 3}

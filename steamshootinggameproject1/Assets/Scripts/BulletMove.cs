@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletMove : MonoBehaviour
 {
     [SerializeField]
-    public float speed = 20f;
+    protected float speed = 20f;
     
     private GameManager gameManager = null;
 
@@ -16,12 +16,12 @@ public class BulletMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         transform.Translate(Vector2.up * speed * Time.deltaTime);
         CheckLimit();
     }
-    private void CheckLimit()
+    protected void CheckLimit()
     {
         if(transform.position.x < gameManager.MinPosition.x-2f)
         {
@@ -40,7 +40,7 @@ public class BulletMove : MonoBehaviour
             Despawn();
         }
     }
-    public void Despawn()
+    public virtual void Despawn()
     {
         transform.SetParent(gameManager.Pool.transform, false);
         gameObject.SetActive(false);

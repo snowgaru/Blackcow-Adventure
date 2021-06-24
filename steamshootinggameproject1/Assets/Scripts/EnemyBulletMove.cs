@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBulletMove : MonoBehaviour
+public class EnemyBulletMove : BulletMove
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void Update()
     {
-        
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        CheckLimit();
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void Despawn()
     {
-        
+        Destroy(gameObject);
     }
 }

@@ -20,9 +20,11 @@ public class SaleEnemy1Move : MonoBehaviour
     private GameManager gameManager = null;
     [SerializeField]
     private GameObject Sound;
+    [SerializeField]
+    private GameObject Bullet;
     void Start()
     {
-        
+        Instantiate(Bullet,transform.position,Quaternion.identity); 
         col = GetComponent<Collider2D>();
         gameManager = FindObjectOfType<GameManager>();
     }

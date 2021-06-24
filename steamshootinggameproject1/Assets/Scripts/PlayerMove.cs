@@ -107,11 +107,11 @@ public class PlayerMove : MonoBehaviour
 
     private IEnumerator HitMoeny()
     {
+        Debug.Log("이건또왜안되미ㅣ");
         isDamaged = true;
         Instantiate(MoneyHit,transform.position,Quaternion.identity);
-        gameManager.score = gameManager.score - saleEnemy1Move.point;
+        gameManager.score = gameManager.score - 1000;
         gameManager.UpdateUI();
-        Debug.Log("이건또왜안되미ㅣ");
         for (int i = 0; i < 8; i++)
         {
             spriteRenderer.enabled = false;

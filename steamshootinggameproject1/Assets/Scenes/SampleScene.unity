@@ -470,8 +470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textScore: {fileID: 281414642}
   textLife: {fileID: 641317568}
-  score: 50000
-  life: 5
+  score: 100000
+  life: 7
   WaitScene: {fileID: 1585559656}
   ShopList1: {fileID: 1658625009}
   playerDamage: 1
@@ -2638,53 +2638,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234893181}
   m_CullTransparentMesh: 0
---- !u!1 &1274666860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1274666862}
-  - component: {fileID: 1274666861}
-  m_Layer: 0
-  m_Name: GameObject (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1274666861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274666860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 250b54f358d25f442b43ddf6c2785179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  hp: 5
-  point: 1000
-  Sound: {fileID: 0}
---- !u!4 &1274666862
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274666860}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4459362, y: -2.8628056, z: -6.4641843}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409580716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,7 +3432,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6785506858522454239, guid: 6d605201cc7f38d44b6eaa3aca888153, type: 3}
   bulletPosition: {fileID: 793241436}
   gameManager: {fileID: 0}
-  saleEnemy1Move: {fileID: 1274666861}
+  saleEnemy1Move: {fileID: 0}
   Sound: {fileID: 1375614610457209042, guid: 3d84da9530c44db48835d59177d4d62e, type: 3}
   MoneyHit: {fileID: 4862292704839838926, guid: e571d5529751f4d4bbc6cacd3f634108, type: 3}
 --- !u!50 &1741148082
@@ -3502,7 +3455,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &1741148083
 BoxCollider2D:
   m_ObjectHideFlags: 0
